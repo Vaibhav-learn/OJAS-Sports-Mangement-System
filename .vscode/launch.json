@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+    {
+        "type": "java",
+        "name": "Run Ojas",
+        "request": "launch",
+        "mainClass": "main.Ojas",
+        "projectName": "OJAS-Sports-Fest",
+        "classpath": [
+        "bin",
+        "lib/mysql-connector-j-8.*.jar"
+        ]
+    }
+    ]
+}
