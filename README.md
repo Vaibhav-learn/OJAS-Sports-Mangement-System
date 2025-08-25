@@ -36,17 +36,6 @@ A comprehensive system for managing sports operations—designed to simplify adm
 
 ---
 
-## Tech Stack
-
-- **Backend**: e.g., Django, Node.js + Express, Spring Boot, etc.  
-- **Frontend**: e.g., React, Vue.js, Angular, plain HTML/CSS/JS.  
-- **Database**: e.g., PostgreSQL, MySQL, MongoDB.  
-- **Other Tools**: e.g., Docker, CI/CD services, authentication libraries.
-
-*(List what's relevant to your implementation.)*
-
----
-
 ## Getting Started
 
 ### Prerequisites
