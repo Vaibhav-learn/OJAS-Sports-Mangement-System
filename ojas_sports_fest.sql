@@ -1,0 +1,37 @@
+DROP DATABASE IF EXISTS OJAS;
+CREATE DATABASE OJAS;
+USE OJAS;
+
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    password VARCHAR(100) NOT NULL,
+    role ENUM('CORE_ADMIN', 'MANAGEMENT_ADMIN', 'PARTICIPANT') NOT NULL
+);
+
+CREATE TABLE sports (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    sports_name VARCHAR(100) UNIQUE NOT NULL,
+    max_players INT NOT NULL,
+    registration_fees DECIMAL(10,2) NOT NULL,
+    first_prize DECIMAL(10,2) NOT NULL,
+    second_prize DECIMAL(10,2) NOT NULL
+);
+
+CREATE TABLE fixtures (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    sports_name VARCHAR(100) UNIQUE NOT NULL,
+    team1 VARCHAR(100) NOT NULL,
+    team2 VARCHAR(100) NOT NULL,
+    match_date DATE NOT NULL,
+    match_time TIME NOT NULL,
+);
+
+CREATE TABLE players (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    player_name VARCHAR(100) NOT NULL,
+    ports_name VARCHAR(100) UNIQUE NOT NULL,
+    college_id BIGINT NOT NULL,
+    course VARCHAR(100) NOT NULL,
+);
